@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-weather",
   "description": "Get Weather Information in Koishi",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -28,7 +28,18 @@
     "weather",
     "7timer"
   ],
+  "koishi": {
+    "description": {
+      "en": "Weather query based on [7timer](http://www.7timer.info)",
+      "zh": "基于 [7timer](http://www.7timer.info) 的天气查询"
+    }
+  },
   "peerDependencies": {
-    "koishi": "^4.3.2"
+    "koishi": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "koishi": "^4.7.2",
+    "typescript": "^4.7.2"
   }
 }
